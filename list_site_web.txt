@@ -1,0 +1,5 @@
+
+https://www.aqsone.com/fr/blog/comment-la-data-science-reinvente-la-detection-de-fraude
+https://www.datarockstars.ai/la-societe-generale-utilise-le-machine-learning-pour-prevenir-des-fraudes-bancaires/
+https://www.talend.com/fr/resources/big-data-finance/
+https://www.lipton-fit.com/blog/detection-de-la-fraude-financiere-par-lintelligence-artificielle-une-approche-par-lincertitude
