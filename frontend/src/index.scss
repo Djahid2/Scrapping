@@ -1,0 +1,119 @@
+@use './scss/app';
+@use './scss/home';
+@use './scss/navbar';
+@use './scss/faqs';
+@use './scss/about';
+@use './scss/disc';
+@use './scss/loaderMaintr';
+@use './scss/articlesgoupe';
+@use "./css/App";
+@use "./scss/ArticleMoreData";
+@use "./scss//fitchedarticles";
+@use "./scss/collection";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+:root {
+    --t: #333;
+    --b: #777;
+    --bl: black;
+    --color-one: #79bbfd;
+    --color-tow: #82bdf0;
+}
+
+@font-face {
+    font-family: 'BaiJamjuree-Regular';
+    src: url('./assets/fonts/BaiJamjuree-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'BaiJamjuree-Medium';
+    src: url('./assets/fonts/BaiJamjuree-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'BaiJamjuree-ExtraLight';
+    src: url('./assets/fonts/BaiJamjuree-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'BaiJamjuree-SemiBold';
+    src: url('./assets/fonts/BaiJamjuree-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('./assets/fonts/RobotoSlab-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('./assets/fonts/BebasNeue-Regular.ttf');
+}
+
+body {
+    font-family: 'BaiJamjuree-Medium';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+h1 {
+    font-weight: normal;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+}

@@ -1,0 +1,10 @@
+.ArtileMoreData {
+    .container {
+        min-height: calc(100vh - 70px);
+        padding-top: 20px;
+
+        >hr {
+            margin: 10px 0;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  # Django (backend) Service
+  django:
+    build:
+      context: ./backend 
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1
+      - CELERY_BROKER_URL=redis://redis:6379/
+      - CELERY_RESULT_BACKEND=redis://redis:6379/
+    depends_on:
+      - pgdb
+      - redis
+      - celery
+
+  # Redis Service
+  redis:
+    image: "redis:alpine"
+    container_name: backend-redis-1
+
+  # Celery Worker Service
+  celery:
+    build:
+      context: ./backend  # Backend Dockerfile for Celery
+    command: celery -A Scrapping.celery worker --loglevel=info  # Corrected Celery application path
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - redis
+
+  # Celery Beat Service
+  celery-beat:
+    build:
+      context: ./backend  # Backend Dockerfile for Celery Beat
+    command: celery -A Scrapping.celery beat --loglevel=info  # Corrected Celery application path
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - redis
+
+  # PostgreSQL Service
+  pgdb:
+    image: postgres
+    container_name: pgdb
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

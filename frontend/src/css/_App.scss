@@ -1,0 +1,103 @@
+.theMaindivDash {
+    .container {
+
+        .App,
+        .datasetCard {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            gap: 2vw;
+            flex-wrap: wrap;
+            background-color: #eee;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+            position: relative;
+            margin: 20px 10px 0px;
+            width: 100%;
+        }
+
+        .titleThesisData {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .dataCard {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 0.5em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 1em;
+        }
+
+        .revenueCard {
+            width: 92%;
+            height: 20rem;
+        }
+
+        .fraudOverTimeCard {
+            width: 92%;
+            height: 20rem;
+        }
+
+        .customerCard {
+            width: 30%;
+            height: 20rem;
+        }
+
+        .amountCard {
+            width: 30%;
+            height: 20rem;
+        }
+
+        .fraudCard {
+            width: 25%;
+            height: 20rem;
+        }
+
+        .fraudAmountCard,
+        .fraudTransactionCard {
+            width: 30%;
+            height: 20rem;
+        }
+
+        .fraudPercentageCard {
+            width: 50%;
+            height: 20rem;
+        }
+
+        .thesisData1 {
+            width: 40%;
+            height: 25rem;
+        }
+
+        .thesisData2 {
+            width: 50%;
+            height: 25rem;
+        }
+        .thesisData3 {
+            width: 60%;
+            height: 23rem;
+        }
+        .thesisData4 {
+            width: 30%;
+            height: 23rem;
+        }
+        .thesisData5 {
+            width: 30%;
+            height: 23rem;
+        }
+        .thesisData6 {
+            width: 40%;
+            height: 23rem;
+        }
+    }
+}
