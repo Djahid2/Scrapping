@@ -12,12 +12,13 @@ Here’s where these elements live in your project:
   Projet-Scrapping/
 │
 ├── backend/
-│   ├── models.py         ← Add models: Article, Section, ThesisData
-│   ├── serializers.py    ← Create one serializer for each model
-│   ├── views.py          ← ViewSets to expose Article, Section, ThesisData
-│   ├── urls.py           ← Define REST API endpoints here
-│   ├── scraping/         ← Add your scraping logic (parsers, extractors)
-│
+│          ├── scraping/         ← Add your scraping logic (parsers, extractors)
+|          ├── blog/ 
+│                          ├── models.py         ← Add models: Article, Section, ThesisData
+│                          ├── serializers.py    ← Create one serializer for each model
+│                          ├── views.py          ← ViewSets to expose Article, Section, ThesisData
+│                          ├── urls.py           ← Define REST API endpoints here
+|          ├── scrap Files  ← here we have the scrap files  
 ├── frontend/
 │   └── components/       ← Optional: UI to display Articles & visualizations
 │
