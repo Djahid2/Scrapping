@@ -8,7 +8,23 @@ It uses **Django** for the backend and **React.js (Vite)** for the frontend.
 
 Here’s where these elements live in your project:
 
-<pre> ```plaintext Projet-Scrapping/ │ ├── backend/ │ ├── models.py ← Add models: Article, Section, ThesisData │ ├── serializers.py ← Create one serializer for each model │ ├── views.py ← ViewSets to expose Article, Section, ThesisData │ ├── urls.py ← Define REST API endpoints here │ ├── scraping/ ← Add your scraping logic (parsers, extractors) │ ├── frontend/ │ └── components/ ← Optional: UI to display Articles & visualizations │ ├── README.md ├── docker-compose.yml ``` </pre>
+<pre> ```
+  Projet-Scrapping/
+│
+├── backend/
+│   ├── models.py         ← Add models: Article, Section, ThesisData
+│   ├── serializers.py    ← Create one serializer for each model
+│   ├── views.py          ← ViewSets to expose Article, Section, ThesisData
+│   ├── urls.py           ← Define REST API endpoints here
+│   ├── scraping/         ← Add your scraping logic (parsers, extractors)
+│
+├── frontend/
+│   └── components/       ← Optional: UI to display Articles & visualizations
+│
+├── README.md
+├── docker-compose.yml
+
+  ``` </pre>
 
 ## Prerequisites
 
